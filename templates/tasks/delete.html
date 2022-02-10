@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<style>
+
+		body{
+			background-color:#afd1f5 ;
+		}
+
+
+	</style>
+
+	<p> Are You Sure You Want To Delete "{{item}}" ? </p>
+
+
+
+<a href=" {% url 'list' %} ">Cancel</a>
+
+<form method="POST" action="">
+	{% csrf_token %}
+	<input type="submit" name="Confirm">
+	
+
+</form>
+	
+
+
+</body>
+</html>
